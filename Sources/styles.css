@@ -1,0 +1,134 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    background-color: lightsalmon;
+    font-family: Montserrat, sans-serif; 
+}
+
+/* Summary, Testimonial, Photos, Meetup Styles in Common */
+.summary,
+.testimonial,
+.photos,
+.meetup {
+    margin: 4rem auto;
+}
+
+/* Bar Styles (top and bottom) */
+.bar {
+    background-color: #008080;
+    height: 3rem;
+}
+
+.bar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    height: 100%;
+}
+
+.bar ul li {
+    list-style: none;
+}
+
+.bar ul li a {
+    text-decoration: none;
+    color: lightsalmon;
+}
+
+/* Intro Styles */
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+
+.intro h1 {
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    color: coral;
+    text-align: center;
+}
+
+/* Summary Styles */
+.summary {
+    padding: 0 1rem;
+}
+
+.summary  h2 {
+    color: yellow;
+}
+
+.summary p {
+    color: white;
+}
+
+/* Photos Styles (two times) */
+.photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.photos img {
+    width: 30%;
+}
+
+/* Testimonial Styles*/
+.testimonial {
+    padding: 1rem 1rem 0;
+    height: 20rem;
+    color: yellow;
+    background-color: teal;
+}
+
+/* Meetup Styles */
+.meetup  h1 {
+    color: yellow;
+    text-align: center;
+}
+
+.meetup img {
+    width: 50%; 
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1048px) {
+    .photos {
+        flex-direction: column;
+    }
+
+    .photos img {
+        width: 100%;
+        margin: 1rem auto;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .bar {
+        height: 6rem;
+    }
+
+    .bar ul {
+        flex-direction: column;
+    }
+
+    .intro {
+        height: 15rem;
+    }
+
+    .meetup img {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 398px) {
+    .testimonial {
+        font-size: 14px;
+    }
+}
